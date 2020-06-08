@@ -43,16 +43,28 @@ namespace Parcial1_prog1
 						_modeDisp1 = true;
 						_modeDisp2 = false;
 						_modeDisp3 = false;
+						Console.ForegroundColor = ConsoleColor.Green;
+						Console.WriteLine("Modo seleccionado correctamente!");
+						Console.ReadKey();
+						MenuPrincipal.ShowMenu();
 						break;
 					case 2:
 						_modeDisp1 = false;
 						_modeDisp2 = true;
 						_modeDisp3 = false;
+						Console.ForegroundColor = ConsoleColor.Green;
+						Console.WriteLine("Modo seleccionado correctamente!");
+						Console.ReadKey();
+						MenuPrincipal.ShowMenu();
 						break;
 					case 3:
 						_modeDisp1 = false;
 						_modeDisp2 = false;
 						_modeDisp3 = true;
+						Console.ForegroundColor = ConsoleColor.Green;
+						Console.WriteLine("Modo seleccionado correctamente!");
+						Console.ReadKey();
+						MenuPrincipal.ShowMenu();
 						break;
 					default:
 						Console.ForegroundColor = ConsoleColor.Red;
@@ -68,7 +80,6 @@ namespace Parcial1_prog1
 				Console.WriteLine("Opcion invalida!");
 				Console.ReadKey();
 				ShowMenu();
-				throw;
 			}
 			
 		}

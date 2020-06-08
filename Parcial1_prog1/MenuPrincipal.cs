@@ -15,6 +15,7 @@ namespace Parcial1_prog1
 			Console.WriteLine("**********************************************");
 			Console.ForegroundColor = ConsoleColor.Cyan;
 			Console.WriteLine("1 - Configurar Dispensacion de billetes \n2 - Retiro de dinero \n3 - Salir");
+			Console.Write("Digite una opcion: ");
 			try
 			{
 				int opcion = Convert.ToInt32(Console.ReadLine());
@@ -31,13 +32,19 @@ namespace Parcial1_prog1
 						Environment.Exit(0);
 						break;
 					default:
+						Console.ForegroundColor = ConsoleColor.Red;
+						Console.WriteLine("Opcion invalida!");
+						Console.ReadKey();
+						ShowMenu();
 						break;
 				}
 			}
 			catch (Exception)
 			{
-
-				throw;
+				Console.ForegroundColor = ConsoleColor.Red;
+				Console.WriteLine("Opcion invalida!");
+				Console.ReadKey();
+				ShowMenu();
 			}
 		}
 	}
