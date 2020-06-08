@@ -16,7 +16,7 @@ namespace Parcial1_prog1
 			MenuDisp menuDisp = MenuDisp.Instancia;
 			Console.Clear();
 			Console.ForegroundColor = ConsoleColor.White;
-			Console.WriteLine("Menu ratiro de dinero");
+			Console.WriteLine("Menu retiro de dinero");
 			Console.WriteLine("*************************************");
 			Console.ForegroundColor = ConsoleColor.Cyan;
 			Console.Write("Digite la cantidad a retirar: ");
